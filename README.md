@@ -68,3 +68,61 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+##Structure
+src/
+│
+├── components/
+│   ├── Inventory/
+│   │   ├── InventoryList.jsx
+│   │   ├── InventoryForm.jsx
+│   │   └── InventoryDetails.jsx
+│   │
+│   ├── Orders/
+│   │   ├── OrderList.jsx
+│   │   ├── OrderForm.jsx
+│   │   └── OrderDetails.jsx
+│   │
+│   ├── Reports/
+│   │   └── Reports.jsx
+│   │
+│   ├── Alerts/
+│   │   └── StockAlerts.jsx
+│   │
+│   ├── Users/
+│   │   └── UserManagement.jsx
+│   │
+│   ├── Shared/
+│   │   ├── Navbar.jsx
+│   │   └── QRScanner.jsx
+│   │
+├── pages/
+│   ├── Dashboard.jsx
+│   ├── InventoryPage.jsx
+│   ├── OrdersPage.jsx
+│   ├── ReportsPage.jsx
+│   ├── UserRolesPage.jsx
+│   └── MobilePage.jsx
+│
+├── services/
+│   ├── inventoryService.js
+│   ├── orderService.js
+│   ├── reportService.js
+│   └── userService.js
+│
+├── hooks/
+│   ├── useInventory.js
+│   ├── useOrders.js
+│   └── useNotifications.js
+│
+├── utils/
+│   ├── validation.js
+│   ├── helpers.js
+│   └── constants.js
+│
+├── App.jsx
+├── index.js
+├── styles.css
+└── tailwind.config.js
