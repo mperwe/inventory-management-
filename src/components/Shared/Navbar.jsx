@@ -5,8 +5,15 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white py-4 px-8">
       <ul className="flex space-x-6">
+        {/* Home link to HeroPage */}
         <li>
           <Link to="/" className="hover:underline">
+            Home
+          </Link>
+        </li>
+        {/* Protected Routes */}
+        <li>
+          <Link to="/dashboard" className="hover:underline">
             Dashboard
           </Link>
         </li>
@@ -33,6 +40,12 @@ const Navbar = () => {
         <li>
           <Link to="/mobile" className="hover:underline">
             Mobile
+          </Link>
+        </li>
+        {/* Login link */}
+        <li>
+          <Link to="/login" className="hover:underline">
+            Login
           </Link>
         </li>
       </ul>

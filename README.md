@@ -75,55 +75,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 src/
 │
 ├── components/
-│   ├── Inventory/
-│   │   ├── InventoryList.jsx
-│   │   ├── InventoryForm.jsx
-│   │   └── InventoryDetails.jsx
-│   │
-│   ├── Orders/
-│   │   ├── OrderList.jsx
-│   │   ├── OrderForm.jsx
-│   │   └── OrderDetails.jsx
-│   │
-│   ├── Reports/
-│   │   └── Reports.jsx
-│   │
-│   ├── Alerts/
-│   │   └── StockAlerts.jsx
-│   │
-│   ├── Users/
-│   │   └── UserManagement.jsx
-│   │
 │   ├── Shared/
 │   │   ├── Navbar.jsx
-│   │   ├── QRScanner.jsx
-│   │   └── Footer.jsx       ← Add Footer.jsx here
-│   │
+│   │   ├── Footer.jsx    <-- Footer component here
+│   │   └── QRScanner.jsx
+│   ├── Auth/
+│   │   └── Login.jsx
+│   ├── Inventory/
+│   ├── Orders/
+│   ├── Reports/
+│   ├── Alerts/
+│   └── Users/
 ├── pages/
+│   ├── HeroPage.jsx      <-- Hero page (Home page)
+│   ├── GetStartedPage.jsx  <-- Protected Get Started page
 │   ├── Dashboard.jsx
 │   ├── InventoryPage.jsx
 │   ├── OrdersPage.jsx
 │   ├── ReportsPage.jsx
 │   ├── UserRolesPage.jsx
-│   └── MobilePage.jsx
-│
+│   ├── MobilePage.jsx
+│   └── ProtectedRoute.jsx
 ├── services/
-│   ├── inventoryService.js
-│   ├── orderService.js
-│   ├── reportService.js
-│   └── userService.js
-│
 ├── hooks/
-│   ├── useInventory.js
-│   ├── useOrders.js
-│   └── useNotifications.js
-│
 ├── utils/
-│   ├── validation.js
-│   ├── helpers.js
-│   └── constants.js
-│
 ├── App.jsx
-├── index.js
-├── styles.css
-└── tailwind.config.js
+└── index.js
+

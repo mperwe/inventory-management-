@@ -1,29 +1,32 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Shared/Navbar";
-import Footer from "./components/Shared/Footer"; // Import Footer
-import Dashboard from "./pages/Dashboard";
+import Navbar from "./components/Shared/Navbar"; // Assuming you have a Navbar component
+import Footer from "./components/Shared/Footer"; // Assuming you have a Footer component
+import HeroPage from "./pages/HeroPage";  // Landing Page before login
+import Login from "./components/Auth/Login"; // Login Page
+import Signup from "./components/Auth/SignUp"; // Signup Page
+import Dashboard from "../src/pages/Dashboard"; // Main authenticated page
 import InventoryPage from "./pages/InventoryPage";
 import OrdersPage from "./pages/OrdersPage";
 import ReportsPage from "./pages/ReportsPage";
 import UserRolesPage from "./pages/UserRolesPage";
 import MobilePage from "./pages/MobilePage";
-import Login from "./components/Auth/Login";
-import SignUp from "./components/Auth/SignUp"; // Import SignUp page
-import ProtectedRoute from "./pages/ProtectedRoute";
+import ProtectedRoute from "./pages/ProtectedRoute"; // Protected route logic
 
 const App = () => {
   return (
     <Router>
       <Navbar />
-      <div className="p-6">
+      <div className="min-h-screen flex flex-col">
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} /> {/* Add SignUp route */}
-          
+          {/* Public Routes */}
+          <Route path="/" element={<HeroPage />} /> {/* HeroPage for all users */}
+          <Route path="/login" element={<Login />} /> {/* Login page */}
+          <Route path="/signup" element={<Signup />} /> {/* Signup page */}
+
           {/* Protected Routes */}
           <Route
-            path="/"
+            path="/dashboard"
             element={
               <ProtectedRoute>
                 <Dashboard />
@@ -71,8 +74,8 @@ const App = () => {
             }
           />
         </Routes>
+        <Footer /> {/* Footer always at the bottom */}
       </div>
-      <Footer /> {/* Add Footer here */}
     </Router>
   );
 };

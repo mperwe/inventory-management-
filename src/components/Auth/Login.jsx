@@ -21,10 +21,10 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Handle the login logic here (API call, check credentials)
+    // Handle login logic (API call, check credentials)
     if (formData.email && formData.password) {
       // On successful login, redirect to dashboard
-      navigate("/");
+      navigate("/dashboard");
     } else {
       setError("Invalid login credentials.");
     }
@@ -70,7 +70,7 @@ const Login = () => {
       <div className="mt-4 text-center">
         <span>Don't have an account? </span>
         <button
-          onClick={() => navigate("/signup")}
+          onClick={() => navigate("/signup")} // Navigate to Signup page
           className="text-blue-500"
         >
           Create an account
