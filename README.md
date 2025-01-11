@@ -96,7 +96,8 @@ src/
 │   │
 │   ├── Shared/
 │   │   ├── Navbar.jsx
-│   │   └── QRScanner.jsx
+│   │   ├── QRScanner.jsx
+│   │   └── Footer.jsx       ← Add Footer.jsx here
 │   │
 ├── pages/
 │   ├── Dashboard.jsx
