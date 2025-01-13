@@ -75,55 +75,46 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 src/
 │
 ├── components/
-│   ├── Inventory/
-│   │   ├── InventoryList.jsx
-│   │   ├── InventoryForm.jsx
-│   │   └── InventoryDetails.jsx
-│   │
-│   ├── Orders/
-│   │   ├── OrderList.jsx
-│   │   ├── OrderForm.jsx
-│   │   └── OrderDetails.jsx
-│   │
-│   ├── Reports/
-│   │   └── Reports.jsx
-│   │
-│   ├── Alerts/
-│   │   └── StockAlerts.jsx
-│   │
-│   ├── Users/
-│   │   └── UserManagement.jsx
-│   │
 │   ├── Shared/
 │   │   ├── Navbar.jsx
-│   │   ├── QRScanner.jsx
-│   │   └── Footer.jsx       ← Add Footer.jsx here
-│   │
+│   │   ├── Sidebar.jsx
+│   │   ├── Footer.jsx
+│   └── Widgets/
+│       ├── StockAlerts.jsx
+│       ├── BarcodeScanner.jsx
+│       ├── RealtimeTracking.jsx
+│       ├── MultiLocation.jsx
+│
 ├── pages/
+│   ├── HeroPage.jsx       <-- Hero Page (Home page)
+│   ├── Login.jsx
+│   ├── Signup.jsx
 │   ├── Dashboard.jsx
-│   ├── InventoryPage.jsx
-│   ├── OrdersPage.jsx
-│   ├── ReportsPage.jsx
-│   ├── UserRolesPage.jsx
-│   └── MobilePage.jsx
+│   ├── Inventory.jsx
+│   ├── Orders.jsx
+│   ├── Reports.jsx
+│   ├── Suppliers.jsx
+│   └── ProtectedRoute.jsx
+│
+├── context/
+│   └── AuthContext.jsx
 │
 ├── services/
+│   ├── apiService.js
 │   ├── inventoryService.js
 │   ├── orderService.js
-│   ├── reportService.js
-│   └── userService.js
+│   └── supplierService.js
 │
 ├── hooks/
-│   ├── useInventory.js
-│   ├── useOrders.js
-│   └── useNotifications.js
+│   └── useAuth.js
 │
 ├── utils/
-│   ├── validation.js
+│   ├── constants.js
 │   ├── helpers.js
-│   └── constants.js
+│
+├── styles/
+│   └── index.css
 │
 ├── App.jsx
 ├── index.js
-├── styles.css
 └── tailwind.config.js

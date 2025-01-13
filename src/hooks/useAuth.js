@@ -1,17 +1,6 @@
-import { useState, useEffect } from "react";
-import authService from "../services/authService";
+import { useContext } from 'react';
+import { AuthContext } from '../context/AuthContext';
 
-const useAuth = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    authService.isAuthenticated()
-  );
-
-  useEffect(() => {
-    const token = authService.isAuthenticated();
-    setIsAuthenticated(token);
-  }, []);
-
-  return { isAuthenticated };
+export const useAuth = () => {
+  return useContext(AuthContext);
 };
-
-export default useAuth;
