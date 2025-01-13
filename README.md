@@ -77,28 +77,44 @@ src/
 ├── components/
 │   ├── Shared/
 │   │   ├── Navbar.jsx
-│   │   ├── Footer.jsx    <-- Footer component here
-│   │   └── QRScanner.jsx
-│   ├── Auth/
-│   │   └── Login.jsx
-│   ├── Inventory/
-│   ├── Orders/
-│   ├── Reports/
-│   ├── Alerts/
-│   └── Users/
+│   │   ├── Sidebar.jsx
+│   │   ├── Footer.jsx
+│   └── Widgets/
+│       ├── StockAlerts.jsx
+│       ├── BarcodeScanner.jsx
+│       ├── RealtimeTracking.jsx
+│       ├── MultiLocation.jsx
+│
 ├── pages/
-│   ├── HeroPage.jsx      <-- Hero page (Home page)
-│   ├── GetStartedPage.jsx  <-- Protected Get Started page
+│   ├── HeroPage.jsx       <-- Hero Page (Home page)
+│   ├── Login.jsx
+│   ├── Signup.jsx
 │   ├── Dashboard.jsx
-│   ├── InventoryPage.jsx
-│   ├── OrdersPage.jsx
-│   ├── ReportsPage.jsx
-│   ├── UserRolesPage.jsx
-│   ├── MobilePage.jsx
+│   ├── Inventory.jsx
+│   ├── Orders.jsx
+│   ├── Reports.jsx
+│   ├── Suppliers.jsx
 │   └── ProtectedRoute.jsx
+│
+├── context/
+│   └── AuthContext.jsx
+│
 ├── services/
+│   ├── apiService.js
+│   ├── inventoryService.js
+│   ├── orderService.js
+│   └── supplierService.js
+│
 ├── hooks/
+│   └── useAuth.js
+│
 ├── utils/
+│   ├── constants.js
+│   ├── helpers.js
+│
+├── styles/
+│   └── index.css
+│
 ├── App.jsx
-└── index.js
-
+├── index.js
+└── tailwind.config.js

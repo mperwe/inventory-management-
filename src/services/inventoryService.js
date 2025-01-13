@@ -1,7 +1,5 @@
-const inventory = [];
+import { get } from './apiService';
 
-export const addProduct = (product) => {
-  inventory.push(product);
+export const getInventory = async () => {
+  return await get('inventory');
 };
-
-export const getInventory = () => inventory;

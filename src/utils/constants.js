@@ -1,8 +1,1 @@
-export const ROLES = {
-    ADMIN: "admin",
-    MANAGER: "manager",
-    EMPLOYEE: "employee",
-  };
-  
-  export const LOW_STOCK_THRESHOLD = 5;
-  
+export const API_URL = 'https://api.example.com/'; // Replace with your API URL
