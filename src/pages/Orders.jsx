@@ -12,7 +12,7 @@ const Orders = () => {
       products: "Laptop, Mouse",
       quantity: 2,
       totalValue: 1200,
-      status: "Paid",
+      status: "Delivered",
       address: "123 Main Street, Berlin",
       contact: "+491234567890",
     },
@@ -23,7 +23,7 @@ const Orders = () => {
       products: "Smartphone",
       quantity: 1,
       totalValue: 800,
-      status: "Not Paid",
+      status: "Not Delivered",
       address: "456 Elm Street, Hamburg",
       contact: "+491987654321",
     },
@@ -34,7 +34,7 @@ const Orders = () => {
       products: "Monitor, Keyboard",
       quantity: 2,
       totalValue: 450,
-      status: "Paid",
+      status: "Delivered",
       address: "789 Pine Avenue, Munich",
       contact: "+491234098765",
     },
@@ -45,7 +45,7 @@ const Orders = () => {
       products: "Tablet",
       quantity: 1,
       totalValue: 350,
-      status: "Not Paid",
+      status: "Not Delivered",
       address: "101 Maple Road, Frankfurt",
       contact: "+4915678904321",
     },
@@ -56,7 +56,7 @@ const Orders = () => {
       products: "Headphones",
       quantity: 3,
       totalValue: 300,
-      status: "Paid",
+      status: "Delivered",
       address: "202 Oak Street, Stuttgart",
       contact: "+4918907654321",
     },
@@ -239,8 +239,8 @@ const Orders = () => {
                   }
                   className="p-2 border rounded w-full mt-1"
                 >
-                  <option value="Not Paid">Not Paid</option>
-                  <option value="Paid">Paid</option>
+                  <option value="Not Paid">Delivered</option>
+                  <option value="Paid">Not Delivered</option>
                 </select>
               </label>
               <label className="block">
