@@ -22,6 +22,7 @@ const Sidebar = () => {
           <Link to="/suppliers" className="hover:bg-gray-700 p-2 rounded block">Suppliers</Link>
         </li>
       </ul>
+      
     </div>
   );
 };
