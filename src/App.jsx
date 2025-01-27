@@ -8,8 +8,8 @@ import Inventory from './pages/InventoryPage';
 import Orders from './pages/Orders';
 import Reports from './pages/Reports';
 import Suppliers from './pages/Suppliers';
-import Sales from './pages/Sales';
 import ProtectedRoute from './pages/ProtectedRoute';
+
 
 
 
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/orders" element={<ProtectedRoute><Orders /></ProtectedRoute>} />
         <Route path="/reports" element={<ProtectedRoute><Reports /></ProtectedRoute>} />
         <Route path="/suppliers" element={<ProtectedRoute><Suppliers /></ProtectedRoute>} />
-        <Route path="/sales" element={<ProtectedRoute><Sales /></ProtectedRoute>} />
+      
         
       </Routes>
     </Router>
